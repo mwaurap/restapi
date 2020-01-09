@@ -3,17 +3,20 @@
 <head>
 	<title>REST countries API</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
 </head>
 <body>
+	<div class="container">
 	<h1>REST countries API</h1>
-	<div id="main-container">
-		<div id="flag-container">
-		<img src="" alt="">	
+	<div class="main-container row col-sm-12">
+		<div class="col-sm-6">
+			<div id="flag-container">
+				<img src="" alt="">	
+			</div>
 		</div>
-		<div id="info-container">
+		<div class="col-sm-6" id="info-container">
 			<select id="countries">
 			</select>
-
             <div class="form-group col-sm-12 col-xs-12">
                 <label for="">Your phone number</label>
                 <input id="countrycode" value="" placeholder=""></input>
@@ -25,6 +28,7 @@
 			<p>Region: <span id="region"></span></p>
 			<p>Subregion: <span id="subregion"></span></p>
 		</div>
+	</div>
 	</div>
 	<script type="text/javascript" src="main.js"></script>
 </body>
