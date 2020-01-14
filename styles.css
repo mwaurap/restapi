@@ -50,3 +50,34 @@ h1 {
 .container{
 	background-color: aqua;
 }
+#countrycode{
+	transform: rotate(-10deg);
+}
+#info-container{
+	background-color: aquamarine;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+#myCanvas{
+	border:1px solid #d3d3d3;
+	margin-top: 10px;
+	transition: width 2s, height 2s, transform 2s;
+	background-color: aqua;
+	animation-name: canvas;
+	animation-duration: 6s;
+	position: relative;
+	animation-iteration-count: 2;
+	animation-direction: alternate;
+}
+@keyframes canvas{
+	0% {background-color: bisque; left:0px; top: 0px;}
+	25% {background-color: blue; left:200px; top: 0px; transform: rotate(360deg);}
+	50% {background-color: brown; left:200px; top: 200px; transform: rotate(0deg);}
+	75% {background-color: chartreuse; left:0px; top:200px; transform: rotate(360deg);}
+	100% {background-color: bisque; left:0px; top: 0px;}
+}
+#myCanvas:hover{
+	/* width: 300px; */
+	/* height: 300px; */
+    transform: rotate(360deg);
+}

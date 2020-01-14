@@ -1,35 +1,53 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+	<meta charset="UTF-8">
 	<title>REST countries API</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
 </head>
+
 <body>
 	<div class="container">
-	<h1>REST countries API</h1>
-	<div class="main-container row col-sm-12">
-		<div class="col-sm-6">
-			<div id="flag-container">
-				<img src="" alt="">	
+		<h1>REST countries API</h1>
+		<div class="main-container row col-sm-12">
+			<div class="col-sm-6">
+				<div id="flag-container">
+					<img src="" alt="">
+				</div>
+			</div>
+			<div class="col-sm-6" id="info-container">
+				<select id="countries">
+				</select>
+				<div class="form-group col-sm-12 col-xs-12">
+					<label for="">Your phone number</label>
+					<input id="countrycode" value="" placeholder=""></input>
+				</div>
+				<p>Capital :<span id="capital"></span></p>
+				<p>Phone code: <span id="dialing-code"></span></p>
+				<p>Population: <span id="population"></span></p>
+				<p>Currencies: <span id="currencies"></span></p>
+				<p>Region: <span id="region"></span></p>
+				<p>Subregion: <span id="subregion"></span></p>
 			</div>
 		</div>
-		<div class="col-sm-6" id="info-container">
-			<select id="countries">
-			</select>
-            <div class="form-group col-sm-12 col-xs-12">
-                <label for="">Your phone number</label>
-                <input id="countrycode" value="" placeholder=""></input>
-            </div>
-			<p>Capital :<span id="capital"></span></p>
-			<p>Phone code: <span id="dialing-code"></span></p>
-			<p>Population: <span id="population"></span></p>
-			<p>Currencies: <span id="currencies"></span></p>
-			<p>Region: <span id="region"></span></p>
-			<p>Subregion: <span id="subregion"></span></p>
+	</div>
+	<div class="container">
+		<div class="col-sm-6">
+			<canvas id="myCanvas" width="350" height="100"></canvas>
 		</div>
+		<div class="col-sm-6">
+			<div class="tooltip">Hover over me
+				<span class="tooltiptext">Tooltip text</span>
+			</div>
+		</div>
+
 	</div>
-	</div>
+	<svg width="300" height="200">
+		<polygon points="100,10 40,198 190,"></polygon>
+	</svg>
 	<script type="text/javascript" src="main.js"></script>
 </body>
+
 </html>
